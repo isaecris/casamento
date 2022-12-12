@@ -64,6 +64,9 @@
                                 <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">23.02.2023</h3>
                             </div>
                         </div>
+                        <audio id="my-audio" src="/oracao.mp3"></audio>
+                        <button type="button" class="btn-play mx-auto"
+                            onclick="document.getElementById('my-audio').play()"><span></span></button>
                     </div>
                 </div>
                 <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
@@ -113,12 +116,6 @@
         </div>
     </div>
     <!-- Carousel End -->
-
-    <!-- Music Start -->
-    <audio id="player" preload="auto" autoplay loop>
-        <source src="https://github.com/isaecris/casamento/oracao.mp3" type="audio/mp3">
-    </audio>    
-    <!-- Music End -->
 
     <!-- Event Start -->
     <div class="container-fluid py-5" id="event">
@@ -290,28 +287,6 @@
                 <div class="col-lg-8">
                     <div class="text-center">
                         <form>
-                            <div class="form-row">
-                                <div class="form-group col-sm-6">
-                                    <input type="text" class="form-control bg-secondary border-0 py-4 px-3" placeholder="Nome"/>
-                                </div>
-                                <div class="form-group col-sm-6">
-                                    <input type="email" class="form-control bg-secondary border-0 py-4 px-3" placeholder="Email"/>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group col-sm-6">
-                                    <select class="form-control bg-secondary border-0" style="height: 52px;">
-                                        <option>Acompanhantes</option>
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <textarea class="form-control bg-secondary border-0 py-2 px-3" rows="5" placeholder="Message" required="required"></textarea>
-                            </div>
                             <div>
                                 <button class="btn btn-primary font-weight-bold py-3 px-5" <button onclick="window.open('https://api.whatsapp.com/send?phone=5521972262758&text=Ola Isa e Cris! Gostaria de confirmar minha presença no seu casamento.')" type="submit">Confirmar</button>
                             </div>
